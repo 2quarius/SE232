@@ -1,0 +1,3 @@
+/Users/sixplus/CLionProjects/cutTheCake20181116/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/sixplus/CLionProjects/cutTheCake20181116/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sixplus/CLionProjects/cutTheCake20181116/cmake-build-debug/CMakeFiles/cutTheCake20181116.dir

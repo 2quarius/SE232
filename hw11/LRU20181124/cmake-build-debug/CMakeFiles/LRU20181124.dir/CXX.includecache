@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sixplus/CLionProjects/LRU20181124/lru.h
+map
+-
+algorithm
+-
+list
+-
+
+/Users/sixplus/CLionProjects/LRU20181124/main.cpp
+iostream
+-
+lru.h
+/Users/sixplus/CLionProjects/LRU20181124/lru.h
+

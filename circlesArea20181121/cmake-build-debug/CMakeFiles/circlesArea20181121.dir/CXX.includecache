@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sixplus/CLionProjects/circlesArea20181121/main.cpp
+iostream
+-
+math.h
+-
+string.h
+-
+algorithm
+-
+fstream
+-
+

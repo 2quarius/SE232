@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sixplus/CLionProjects/SE232-2018程序设计与数据结构/bucketsEffect20181116/main.cpp
+iostream
+-
+string
+-
+vector
+-
+stack
+-
+

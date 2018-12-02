@@ -1,0 +1,46 @@
+ProcessLine:
+    get next token from scanner
+    if token type is NUMBER: (is a statement line)
+        if there is more tokens after token: (is defining a statement)
+            add source line to program
+            parse statement (you need to create a function to help you to parse statement)
+            set parsed statement into program
+            end
+        else: (a empty line)
+            delete source line from program according to the line number
+        end
+    if token equals LIST:
+        do list action
+        end
+    if token equals RUN:
+        reset Evalstate's current line to the beginning of the program
+        get current line number
+        while current line number is valid:
+            get statement from program according to line number
+            if statement exists:
+                execute statement
+            get current line number
+        end
+    ...
+    
+    if token neither a NUMBER nor a keyword: (it is a statement should be execute immediately)
+        if token equals invalid keywords: (some keywords can't exist in immediate execute statement)
+            raise error
+        else:
+            put token back into scanner
+            parse and execute the statement
+            
+SubClass of statement:
+    PrintStatement:
+        constructor (construct a PrintStatement from scanner)
+            you can use the function defined in paser.h to help you
+        destructor
+        execute
+        some member variable (to store the things needed by execute)
+    RemStatement:
+        ...
+    ...
+    
+Parse Statement:
+    According to the keywords, using specific statement's constructor to construct a statement
+
