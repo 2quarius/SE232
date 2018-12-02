@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sixplus/CLionProjects/puzzle20181202/main.cpp
+iostream
+-
+sstream
+-
+iterator
+-
+vector
+-
+set
+-
+
