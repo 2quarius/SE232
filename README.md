@@ -1,6 +1,6 @@
 # se232
 Software Engineering/
 Data Structure(fake hhhh)/
-  ep-
+  ep/
   hw-
   lab
