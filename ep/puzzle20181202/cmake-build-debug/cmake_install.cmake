@@ -1,4 +1,4 @@
-# Install script for directory: /Users/sixplus/CLionProjects/puzzle20181202
+# Install script for directory: /Users/sixplus/CLionProjects/SE232/ep/puzzle20181202
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/sixplus/CLionProjects/puzzle20181202/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/sixplus/CLionProjects/SE232/ep/puzzle20181202/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

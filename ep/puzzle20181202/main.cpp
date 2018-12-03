@@ -52,8 +52,8 @@ private:
         direction.emplace_back(1,-1);
         direction.emplace_back(1,0);
         direction.emplace_back(1,1);
-        node* max=new node(-2);
-        node* min=new node(INT_MAX);
+        dest=new node(-2);
+        start=new node(INT_MAX);
         for(int i = 0; i<katayose.size();i++)
         {
             for(int j = 0; j < katayose[i].size(); j++)
@@ -65,12 +65,10 @@ private:
                         katayose[i][j].neighbors.emplace_back(&katayose[x][y]);
                     }
                 }
-                if(katayose[i][j].val>max->val){max=&katayose[i][j];}
-                if(katayose[i][j].val>0&&katayose[i][j].val<min->val){min=&katayose[i][j];}
+                if(katayose[i][j].val>dest->val){dest=&katayose[i][j];}
+                if(katayose[i][j].val>0&&katayose[i][j].val<start->val){start=&katayose[i][j];}
             }
         }
-        start = min;
-        dest = max;
     }
     bool find()
     {
@@ -174,7 +172,7 @@ int main( int argc, char* argv[] )
     copy( istream_iterator<string>( iss3 ), istream_iterator<string>(), back_inserter<vector<string> >( puzzles[2].data ) );
     puzzles[2].width = 9;
     \
-    int puzzleIndex = 2;
+    int puzzleIndex = 0;
 
     if(argc > 1)
     {
