@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/liujia/CLionProjects/程序设计与数据结构习题/lab2_rabdom_writer/main.cpp
+fstream
+-
+iostream
+-
+string
+-
+map
+-
+vector
+-
+ctime
+-
+algorithm
+-
+random
+-
+
