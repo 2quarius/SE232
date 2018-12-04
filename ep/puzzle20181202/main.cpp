@@ -65,8 +65,14 @@ private:
                         katayose[i][j].neighbors.emplace_back(&katayose[x][y]);
                     }
                 }
-                if(katayose[i][j].val>dest->val){dest=&katayose[i][j];}
-                if(katayose[i][j].val>0&&katayose[i][j].val<start->val){start=&katayose[i][j];}
+                if(katayose[i][j].val>dest->val){
+                    if(dest->val==INT_MAX) {delete dest;}
+                    dest=&katayose[i][j];
+                }
+                if(katayose[i][j].val>0&&katayose[i][j].val<start->val){
+                    if(start->val==-2) {delete start;}
+                    start=&katayose[i][j];
+                }
             }
         }
     }
